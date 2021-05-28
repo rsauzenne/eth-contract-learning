@@ -34,4 +34,8 @@ contract Lottery {
         players = new address[](0);
     }
 
+    function getBalance() public view restricted returns (uint) {
+        return this.balance;
+    }
+
 }
